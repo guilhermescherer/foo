@@ -14,6 +14,11 @@ app.get('/sum', (req, res) => {
     res.send('5 + 5 = ' + math.sum(5, 5))
 }) 
 
+app.get('/subtract', (req, res) => {
+    res.send('10 - 4 = ' + math.subtract(10, 4))
+}) 
+
+
 app.listen(3000, () => {
     console.log('Server is listening on 3000')
 })
